@@ -30,5 +30,11 @@
     <ClCompile Include="oneDArray4-2562.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="oneDArray5-5597.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="oneDArray6-3052.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
