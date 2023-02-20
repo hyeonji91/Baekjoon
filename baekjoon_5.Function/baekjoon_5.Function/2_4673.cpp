@@ -1,5 +1,9 @@
 #include<stdio.h>
 #define MAX 10000
+int d(int n, int arr[]) {
+	int temp, th, hun, tens, ones;//순서대로 임시저장, 천의 자리, 백의 자리, 십의 자리, 일의 자리
+	int r;//n을 생성자로 해서 만들어진 수
+
 void d(int n, int arr[]) {
 	int temp, th, hun, tens, ones;//순서대로 임시저장, 천의 자리, 백의 자리, 십의 자리, 일의 자리
 	int r;//n을 생성자로 해서 만들어진 수
@@ -14,7 +18,8 @@ void d(int n, int arr[]) {
 	r = n + th + hun + tens + ones;
 
 	if (r <= MAX) {
-		arr[r - 1] = 1;//셀프넘버가 아님
+		arr[r - 1] = r;
+		d(r, arr);
 	}
 }
 
